@@ -31,18 +31,7 @@
         },
         
         sendEmail: function () {
-            var email = document.getElementById('email').value;
-            var subject = document.getElementById('emailSubject').value;
-            var body = document.getElementById('emailBody').value;
-            Email.send({
-                SecureToken: 'D8AE60800B07AA675FD02D2F718688C5344254864417E7006773EE2729D8A49A816ADAEE1D5EE2D5587F7519731CC369',
-                To : 'ianpstahl@gmail.com',
-                From : email,
-                Subject : subject,
-                Body : body
-            }).then(
-              message => alert(message)
-            );
+          
         },
         isMobile: function () {
             return $(window).width() <= 768;
